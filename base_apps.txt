@@ -1,0 +1,65 @@
+https://github.com/McRipper/smeagol
+
+curl -O http://darwinports.opendarwin.org/downloads/DarwinPorts-1.2-10.4.dmg
+hdiutil attach DarwinPorts-1.2-10.4.dmg
+sudo installer -pkg DarwinPorts-1.2.pkg -target "/"
+hditutil detach /Volumes/DarwinPorts-1.2/
+
+
+# Base apps
+
+# Quicksilver App
+http://qs0.qsapp.com/download.php
+
+# F.lux
+https://secure.herf.org/flux/Flux.zip
+
+# Dropbox
+https://www.dropbox.com/download?plat=mac
+
+# Firefox
+http://download.mozilla.org/?product=firefox-6.0.1&os=osx&lang=it
+- Sync
+- Web Developer
+- Firebug
+
+# Chrome
+https://dl.google.com/chrome/mac/stable/GGRO/googlechrome.dmg
+
+# Cord
+http://downloads.sourceforge.net/project/cord/cord/0.5.5/CoRD_0.5.5.zip?use_mirror=garr
+
+# 1Password
+https://d13itkw33a7sus.cloudfront.net/dist/1P/mac/1Password-3.8.3.zip
+
+# Skype
+http://www.skype.com/go/getskype-macosx.dmg
+
+# Vlc
+http://sourceforge.net/projects/vlc/files/1.1.11/macosx/vlc-1.1.11.dmg/download
+
+# Iterm2
+http://code.google.com/p/iterm2/downloads/detail?name=iTerm2-1_0_0_20110828.zip&can=2&q=
+
+# Textmate
+http://download.macromates.com/TextMate_1.5.10.zip
+
+# MongoHub
+https://github.com/downloads/bububa/MongoHub-Mac/MongoHub.zip
+
+# Mysql Workbench
+http://dev.mysql.com/get/Downloads/MySQLGUITools/mysql-workbench-gpl-5.2.34-osx-i686.dmg/from/http://it.mysql.contactlab.it/
+
+# Stuffit Expander
+http://my.smithmicro.com/downloads/files/StuffIt_Expander_2011_15.0.2.dmg
+
+# VirtualBox
+http://download.virtualbox.org/virtualbox/4.1.2/VirtualBox-4.1.2-73507-OSX.dmg
+
+# Iworks
+
+# XCode
+
+# Evernote
+
+
