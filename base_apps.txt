@@ -1,12 +1,15 @@
+#!/bin/bash
+
+# Xcode
+
+# Install Homebrew
+/usr/bin/ruby -e "$(curl -fsSL https://raw.github.com/gist/323731)"
+
+# Install base dev tools
 https://github.com/McRipper/smeagol
 
-curl -O http://darwinports.opendarwin.org/downloads/DarwinPorts-1.2-10.4.dmg
-hdiutil attach DarwinPorts-1.2-10.4.dmg
-sudo installer -pkg DarwinPorts-1.2.pkg -target "/"
-hditutil detach /Volumes/DarwinPorts-1.2/
-
-
-# Base apps
+# Android Dev
+http://dl.google.com/android/android-sdk_r12-mac_x86.zip
 
 # Quicksilver App
 http://qs0.qsapp.com/download.php
@@ -22,6 +25,7 @@ http://download.mozilla.org/?product=firefox-6.0.1&os=osx&lang=it
 - Sync
 - Web Developer
 - Firebug
+- Vimperator
 
 # Chrome
 https://dl.google.com/chrome/mac/stable/GGRO/googlechrome.dmg
@@ -51,15 +55,27 @@ https://github.com/downloads/bububa/MongoHub-Mac/MongoHub.zip
 http://dev.mysql.com/get/Downloads/MySQLGUITools/mysql-workbench-gpl-5.2.34-osx-i686.dmg/from/http://it.mysql.contactlab.it/
 
 # Stuffit Expander
-http://my.smithmicro.com/downloads/files/StuffIt_Expander_2011_15.0.2.dmg
+echo "Install Stuffit Expander? (y/n)"
+read A
+if [ $A = "y" ]; then
+  cd /tmp
+  curl http://my.smithmicro.com/downloads/files/StuffIt_Expander_2011_15.0.2.dmg
+  hdiutil attach StuffIt_Expander_2011_15.0.2.dmg
+  cd /Volumes/StuffIt_Expander_2011_15.0.2
+  mv File -> App
+  hdiutil detach /Volumes/StuffIt_Expander_2011_15.0.2
+fi
 
 # VirtualBox
 http://download.virtualbox.org/virtualbox/4.1.2/VirtualBox-4.1.2-73507-OSX.dmg
 
 # Iworks
 
-# XCode
-
 # Evernote
 
+curl -O http://darwinports.opendarwin.org/downloads/DarwinPorts-1.2-10.4.dmg
+hdiutil attach DarwinPorts-1.2-10.4.dmg
+sudo installer -pkg DarwinPorts-1.2.pkg -target "/"
+hditutil detach /Volumes/DarwinPorts-1.2/
 
+# Rsa e pub
